@@ -13,11 +13,11 @@ const Header = () => {
   //stats para cambiar al imagenes
     const [cambiarImagen, setCambiarImagen] = useState(0)
     const imagenes = [
-        './src/img/React.svg.png',
-        './src/img/node.svg.png',
-        './src/img/html.png',
-        './src/img/css.svg.png',
-        './src/img/js.png'
+        '/img/React.svg.png',
+        '/img/node.svg.png',
+        '/img/html.png',
+        '/img/css.svg.png',
+        '/img/js.png'
     ]; 
 
     //state para el menu
@@ -102,13 +102,13 @@ const Header = () => {
         <ul className={`${menu ? 'block' : 'hidden md:block'} md:flex flex-col md:flex-row gap-2 md:gap-20 font-extralight text-lg md:text-xl mr-auto md:mr-0 mt-12 md:mt-0`}>
         
           <li className="flex gap-1">
-            <img src="./src/img/home.svg" alt="imagen inicio" className="h-16" />
+            <img src="/img/home.svg" alt="imagen inicio" className="h-16" />
             <a href="#header" className="hover:text-teal-950 hover:no-underline">
               Inicio
             </a>
           </li>
           <li className="flex gap-5">
-          <img src="./src/img/habilidades.svg" alt="imagen habilidades" className="h-16" />
+          <img src="/img/habilidades.svg" alt="imagen habilidades" className="h-16" />
             <a
               href="#habilidades"
               className="hover:text-teal-950 hover:no-underline"
@@ -117,7 +117,7 @@ const Header = () => {
             </a>
           </li>
           <li className="flex gap-5">
-          <img src="./src/img/proyectos.svg" alt="imagen habilidades" className="h-16" />
+          <img src="/img/proyectos.svg" alt="imagen habilidades" className="h-16" />
             <a
               href="#proyectos"
               className="hover:text-teal-950 hover:no-underline"
@@ -127,7 +127,7 @@ const Header = () => {
           </li>
 
           <li className="flex gap-5">
-          <img src="./src/img/contactos.svg" alt="imagen habilidades" className="h-16" />
+          <img src="/img/contactos.svg" alt="imagen habilidades" className="h-16" />
             <a
               href="#contactos"
               className="hover:text-teal-950 hover:no-underline"
@@ -189,7 +189,7 @@ const Header = () => {
       
 
       <video autoPlay muted loop id="video-fondo" className="absolute md:static top-0 left-0 w-full h-full md:object-cover -z-10">
-        <source src="./src/img/fondoheader.mp4" type="video/mp4"/>
+        <source src="/img/fondoheader.mp4" type="video/mp4"/>
       </video>
     </header>
     </>

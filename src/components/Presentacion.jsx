@@ -43,31 +43,31 @@ const Presentacion = () => {
 
             <div className="flex m-10">
                 <div className="max-w-[120rem] mx-auto flex flex-col gap-5 items-center mt-4">
-                    <img src="./src/img/desarolloweb.svg" alt="imagen backend" 
+                    <img src="/img/desarolloweb.svg" alt="imagen backend" 
                         className='h-32'/>
                     <h1 className='text-white text-lg '>DESAROLLO DE SITIOS WEB COMPLETOS</h1>            
                 </div>
 
                 <div className="max-w-[120rem] mx-auto flex flex-col gap-5 items-center mt-4">
-                    <img src="./src/img/desarollowebcompleto.png" alt="imagen backend" 
+                    <img src="/img/desarollowebcompleto.png" alt="imagen backend" 
                         className='h-32'/>
                     <h1 className='text-white text-lg '>DESAROLLO DE APLICCIONES WEB COMPLETAS</h1>            
                 </div>
 
                 <div className="max-w-[120rem] mx-auto flex flex-col gap-5 items-center mt-4">
-                    <img src="./src/img/integracion de sistemas.png" alt="imagen backend" 
+                    <img src="/img/integracion de sistemas.png" alt="imagen backend" 
                         className='h-32'/>
                     <h1 className='text-white text-lg '>INTEGRACION DE SISTEMAS</h1>            
                 </div>
 
                 <div className="max-w-[120rem] mx-auto flex flex-col gap-5 items-center mt-4">
-                    <img src="./src/img/desarollodeAPI.svg" alt="imagen backend" 
+                    <img src="/img/desarollodeAPI.svg" alt="imagen backend" 
                         className='h-32'/>
                     <h1 className='text-white text-lg '>DESAROLLO DE APIS </h1>            
                 </div>
 
                 <div className="max-w-[120rem] mx-auto flex flex-col gap-5 items-center mt-4">
-                    <img src="./src/img/mantenimientoysoporte.png" alt="imagen backend" 
+                    <img src="/img/mantenimientoysoporte.png" alt="imagen backend" 
                         className='h-32'/>
                     <h1 className='text-white text-lg '>MANTENIMIENTO Y SOPORTE</h1>            
                 </div>
