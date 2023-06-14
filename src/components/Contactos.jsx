@@ -9,7 +9,7 @@ const Contactos = () => {
   <input type="text" name="nombre" placeholder="Nombre" />
   <input type="email" name="correo" placeholder="Correo electrónico" />
   <textarea name="mensaje" placeholder="Mensaje"></textarea>
-  <button type="submit">Enviar</button>
+  <button type="submit" className="bg-white">Enviar</button>
 </form>
     </div>
   )
