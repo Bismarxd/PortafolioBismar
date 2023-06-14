@@ -39,37 +39,37 @@ const Presentacion = () => {
 
         <section data-aos="fade-up"
                     data-aos-delay="100">
-            <h1 className='text-white text-center text-4xl font-serif font-extrabold mt-10'>SERVICIOS DE DESAROLLO WEB</h1>
+            <h1 className='text-white text-center text-lg md:text-4xl font-serif font-extrabold mt-10'>SERVICIOS DE DESAROLLO WEB</h1>
 
-            <div className="flex m-10">
+            <div className="md:flex md:m-10 grid grid-cols-2">
                 <div className="max-w-[120rem] mx-auto flex flex-col gap-5 items-center mt-4">
                     <img src="/img/desarolloweb.svg" alt="imagen backend" 
-                        className='h-32'/>
-                    <h1 className='text-white text-lg '>DESAROLLO DE SITIOS WEB COMPLETOS</h1>            
+                        className='md:h-32 h-16'/>
+                    <h1 className='text-white text-xs md:text-lg '>DESAROLLO DE SITIOS WEB COMPLETOS</h1>            
                 </div>
 
                 <div className="max-w-[120rem] mx-auto flex flex-col gap-5 items-center mt-4">
                     <img src="/img/desarollowebcompleto.png" alt="imagen backend" 
-                        className='h-32'/>
-                    <h1 className='text-white text-lg '>DESAROLLO DE APLICCIONES WEB COMPLETAS</h1>            
+                        className='md:h-32 h-16'/>
+                    <h1 className='text-white text-xs md:text-lg '>DESAROLLO DE APLICCIONES WEB COMPLETAS</h1>            
                 </div>
 
                 <div className="max-w-[120rem] mx-auto flex flex-col gap-5 items-center mt-4">
                     <img src="/img/integracion de sistemas.png" alt="imagen backend" 
-                        className='h-32'/>
-                    <h1 className='text-white text-lg '>INTEGRACION DE SISTEMAS</h1>            
+                        className='md:h-32 h-16'/>
+                    <h1 className='text-white text-xs md:text-lg '>INTEGRACION DE SISTEMAS</h1>            
                 </div>
 
                 <div className="max-w-[120rem] mx-auto flex flex-col gap-5 items-center mt-4">
                     <img src="/img/desarollodeAPI.svg" alt="imagen backend" 
-                        className='h-32'/>
-                    <h1 className='text-white text-lg '>DESAROLLO DE APIS </h1>            
+                        className='md:h-32 h-16'/>
+                    <h1 className='text-white text-xs md:text-lg'>DESAROLLO DE APIS </h1>            
                 </div>
 
                 <div className="max-w-[120rem] mx-auto flex flex-col gap-5 items-center mt-4">
                     <img src="/img/mantenimientoysoporte.png" alt="imagen backend" 
-                        className='h-32'/>
-                    <h1 className='text-white text-lg '>MANTENIMIENTO Y SOPORTE</h1>            
+                        className='md:h-32 h-16'/>
+                    <h1 className='text-white text-xs md:text-lg'>MANTENIMIENTO Y SOPORTE</h1>            
                 </div>
             </div>
             
