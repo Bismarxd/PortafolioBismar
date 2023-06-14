@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* rota las imagenes */
+.transision {
+    animation: pacman-transition 2s forwards infinite;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  @keyframes pacman-transition {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  }
+
+  
+
+    .nomover {
+      width: 0;
+      height: 0;
+    }
+
+    /* Define los efectos de transision */
+    .overlay {
+    transform: translateZ(0) scale(1);
+    transform-origin: left;
+    transition: opacity 0.3s, transform 0.3s;
+    }
+    
+    .relative:hover .overlay {
+    opacity: 0.4;
+    transform: translateZ(100px) scale(1.1);
+    }
+    
+    .sticky {
+        position: sticky;
+        top: 0;
+      }
+
+  
+      /* Define los estilos de los botones de carrusel */
+      .slick-prev, .slick-next {
+        font-size: 20px;
+        line-height: 10;
+        z-index: 1;
+      }
+      
+      .slick-prev:before, .slick-next:before {
+        font-size: 2rem;
+        line-height: 5;
+      }
+
+
+
+
+      /* Formulario */
+
+      
+      *,
+      *:before,
+      *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      html, body {
+        
+        font-family: 'Merriweather', sans-serif;
+        padding: 1em;
+      }
+
+      .input, .textarea {
+        border: 0;
+        outline: 0;
+        padding: 1em;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+        font-family: 'Merriweather', sans-serif;
+        -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        resize: none;
+      }
+
+     .input:focus, .textarea:focus {
+        -moz-box-shadow: 0 0px 2px #e74c3c !important;
+        -webkit-box-shadow: 0 0px 2px #e74c3c !important;
+        box-shadow: 0 0px 2px #e74c3c !important;
+      }
+
+     
+      .submit:hover {
+        -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+        -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+        box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+      }
+      
+
