@@ -83,18 +83,31 @@
       .input, .textarea {
         border: 0;
         outline: 0;
-        padding: 1em;
+        padding: .5rem;
         -moz-border-radius: 8px;
         -webkit-border-radius: 8px;
         border-radius: 8px;
         display: block;
         width: 100%;
-        margin-top: 1em;
+        margin-top: .5em;
         font-family: 'Merriweather', sans-serif;
         -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
         -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
         resize: none;
+
+        @media (min-width: 768px){
+          padding: 1em;
+          margin-top: 1em;
+        }
+      }
+
+      .input::placeholder, .textarea::placeholder {
+        font-size: 10px;
+        @media (min-width: 768px){
+          font-size: 16px;
+        }
+        
       }
 
      .input:focus, .textarea:focus {

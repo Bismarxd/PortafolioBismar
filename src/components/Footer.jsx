@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="container text-center">
             <div className='border-b-gray-50 border-b-2 p-4'>
                 
-                    <div className='flex text-white gap-28 justify-center m-5'>
+                    <div className='flex flex-col md:flex-row text-white gap-5 md:gap-28 justify-center m-5'>
                         <div className=''>
                             <FontAwesomeIcon icon={faLocationDot} style={{color: "#838486",}} />
                             <div>
@@ -43,10 +43,10 @@ const Footer = () => {
         
             </div> 
                
-            <div className='flex justify-between border-b-gray-50 border-b-2 p-4'>
+            <div className='flex flex-col md:flex-row justify-between border-b-gray-50 border-b-2 p-4'>
                 <div className='flex gap-9 p-5'>   
                     <div>
-                        <span className='border-b-white border-b-2 text-white font-black text-2xl w-1/2'>REDES</span>
+                        <span className='border-b-white border-b-2 text-white font-black text-sm md:text-2xl w-1/2'>REDES</span>
                     </div>
                     
                             <a href="">
@@ -70,7 +70,7 @@ const Footer = () => {
 
                 <div className='flex items-center m-8 text-white'>
                     <div className=''>
-                        <ul className='flex gap-7 '>
+                        <ul className='flex items-start gap-4 md:gap-7 text-xs md:text-xl'>
                             <li>
                             <a href="#header" className="hover:text-black hover:no-underline">
                                 Inicio</a>
@@ -98,7 +98,7 @@ const Footer = () => {
                 
             </div>
 
-            <div className='text-white p-4'>
+            <div className='text-white p-4 text-xs'>
                 <div>
                     <p>Copyrigth &copy; 2023, Todos los Derechos Reservados - Bismarck Mayta Tintaya</p>
                 </div>
