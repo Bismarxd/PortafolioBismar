@@ -3,6 +3,11 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 import {useState, useEffect } from "react";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
 
 const Header = () => {
   //stats para cambiar al imagenes
@@ -151,21 +156,18 @@ const Header = () => {
               DESCARGAR CV
             </button>
             <div className="flex gap-12 mt-10">
-            <img
-              src="./src/img/whatsap.png"
-              alt="Imagen Header"
-              className="h-7 md:h-10 mt-2"
-              />
-              <img
-              src="./src/img/face.png"
-              alt="Imagen Header"
-              className="h-7 md:h-10 mt-2"
-              />
-              <img
-              src="./src/img/github.svg"
-              alt="Imagen Header"
-              className="h-7 md:h-10 mt-2"
-              />
+              <a href="">
+                <FontAwesomeIcon icon={faWhatsapp} beatFade style={{color: "#069d1f",}} />
+              </a>
+
+              <a href="">
+                <FontAwesomeIcon icon={faFacebook} fade style={{color: "#012b74",}} />
+              </a>
+
+              <a href="">
+                <FontAwesomeIcon icon={faGithub} bounce style={{color: "#868788",}} />
+              </a>            
+                     
           </div>
           
 

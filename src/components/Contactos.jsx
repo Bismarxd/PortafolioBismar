@@ -5,7 +5,7 @@ const Contactos = () => {
     <div className=" h-[30rem]">
       <h1 className="text-center shadow-sm shadow-white text-slate-400 text-4xl m-5 p-5 uppercase">Contacto</h1>
 
-      <form className="z-10 mx-auto max-w-4xl text-center m-10 h-[126px]" name="contacto" method="POST" netlify>
+      <form className="z-10 mx-auto max-w-4xl text-center m-10 h-[126px]" name="contacto" method="POST">
         {/* input, submit y textarea son clases css */}
         <div className="flex gap-4">
           <div className="w-1/2">          
