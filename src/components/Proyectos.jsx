@@ -3,6 +3,9 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+
 
 const Proyectos = () => {
 
@@ -23,6 +26,9 @@ const configuracionCarrusel = {
   slidesToScroll: 1
 };
 
+useEffect(() => {
+  AOS.init({ duration: 1000, delay: 500  }); // Inicializar AOS con una duración de animación de 800ms
+}, []);
   useEffect(() => {
     const interval = setInterval(() => {
         setCambiarPalabras(prevIndex => (prevIndex + 1) % palabras.length);
@@ -38,7 +44,8 @@ const configuracionCarrusel = {
     <>
       
         <section id="proyectos">
-          <div className="w-full">
+          <div className="w-full" data-aos="fade-up"
+                    data-aos-delay="1200">
             <h1 className="text-white text-center uppercase text-4xl transision">{palabras[cambiarPalabras]}</h1>
               <div className="flex justify-center w-full">
                 <Slider {...configuracionCarrusel} className="md:w-3/4 w-[60rem] m-5">

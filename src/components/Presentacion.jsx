@@ -13,9 +13,9 @@ const Presentacion = () => {
   return (
     <>
 
-        <section id="habilidades" className="py-16 shadow-xl shadow-slate-800 mt-28">
+        <section id="habilidades" className="py-16 shadow-xl shadow-slate-800 mt-28 md:m-5">
             
-            <div className="max-w-[100rem] mx-auto bg-black rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-center justify-center text-white md:mt-10 mt-0" >
+            <div className="max-w-[100rem] mx-auto bg-black rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-center justify-center text-white " >
                 <div className="w-full md:w-1/3 mb-6 md:mb-0">
                     <div className="relative overflow-hidden flex justify-center items-center">
                     <img
