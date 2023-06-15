@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 const Proyectos = () => {
 
   const [cambiarPalabras, setCambiarPalabras] = useState(0)
+  const [slidesToShow, setSlidesToShow] = useState(2)
 
   const palabras = [
     'Proyectos',
@@ -17,12 +18,24 @@ const Proyectos = () => {
     
 ]; 
 
+useEffect(() => {
+  const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+  if (mediaQuery.matches) {
+    setSlidesToShow(3);
+  } else {
+    setSlidesToShow(2);
+  }
+
+
+}, []);
+
 const configuracionCarrusel = {
   dots: true,
   infinite: true,
   infiniteLoop: true,
   speed: 500,
-  slidesToShow: 3,
+  slidesToShow: slidesToShow,
   slidesToScroll: 1
 };
 

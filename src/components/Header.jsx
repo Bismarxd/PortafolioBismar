@@ -49,6 +49,11 @@ const Header = () => {
       window.open(url, '_blank');
     }
 
+    //Para envir mensaje por whatsap
+    const numero = "59169933860";
+    const mensaje = "Hola, me interesa"
+    const whatsapp = `http://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`
+
   return (
     <>
         <header className="" id="header" >
@@ -156,7 +161,7 @@ const Header = () => {
               DESCARGAR CV
             </button>
             <div className="flex gap-12 mt-10">
-              <a href="">
+              <a href={whatsapp}>
                 <FontAwesomeIcon icon={faWhatsapp} beatFade style={{color: "#069d1f",}} />
               </a>
 
